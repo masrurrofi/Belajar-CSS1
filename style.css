@@ -1,20 +1,56 @@
+*{
+    background-color: #121212;
+}
+
 h1{
-    font-family: Arial;
+    font-family: "Google Sans Flex", sans-serif;
     text-align: center;
     font-size: 60px;
+    color: white;
 }
 
 input{
     border-radius: 20px ;
+    background-color :lightslategray;
     outline: none;
     border: 1px solid;
     padding: 10px;
+    width: 40vw;
 }
 
 button{
-    background-color: black;
+    background-color:dimgrey;
     color: white;
     border-radius: 6px;
     border: none;
     padding: 6px;
+    margin-top: 10px;
+}
+
+#utama{
+    display: flex;
+    justify-content: center;
+}
+
+.grup-tombol{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input:hover{
+    background-color:rgb(143, 159, 175);
+}
+
+button:hover{
+    border: 1px solid white;
+    
+    cursor: pointer;
+    transition : 0.4s ease;
+}
+
+@media (max-width : 576px){
+    input{
+        width: 80vw;
+    }
 }
